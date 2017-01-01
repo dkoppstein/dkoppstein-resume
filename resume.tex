@@ -1,0 +1,163 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.69in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+\usepackage{footmisc}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{DAVID N.P. KOPPSTEIN}{}{}
+
+\nobreakvspace{0.1em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:david.koppstein@gmail.coml}{david.koppstein\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{}609 933 3952\sbull
+412 Broadway, Apt. 519\sbull
+Seattle, WA 98122  \sbull USA
+\vspace{0.05in}
+
+\spacedhrule{-0.2em}{-0.6em}
+
+\roottitle{Education}
+
+\headedsection
+  {Massachusetts Institute of Technology}
+  {\textsc{Cambridge, MA}} {%
+  \headedsubsection
+    {\textnormal{Ph.D, Biology}}
+    {2015} {}
+}
+
+\headedsection
+  {Yale University}
+  {\textsc{New Haven, CT}} {%
+  \headedsubsection
+    {\textnormal{B.S., Molecular Biophysics and Biochemistry}}
+    {2001 -- 2002} {}
+}
+\vspace{0.05in}
+
+\spacedhrule{-0.2em}{-0.6em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Juno Therapeutics}
+  {\textsc{Seattle, WA}} {%
+  \headedsubsection
+    {Data Scientist}
+    {Jan \apo16 -- present}
+    {\bodytext{Analyzed and communicated immunosequencing analyses for internal projects and external academic collaborators. Conducted analyses for internal RNA-seq and vector integration profiling projects. Served as interim manager of the data science team. }}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {AbVitro}
+  {\textsc{Boston, MA}} {%
+  \headedsubsection
+    {Data Scientist}
+    {Mar \apo15 -- Dec \apo15}
+    {\bodytext{Implemented computational pipeline for an single-cell paired-chain immunosequencing technique at this biotech start-up \textit{(Acquired by Juno Therapeutics).}}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {David Bartel Lab, MIT}
+  {\textsc{Boston, MA}} {%
+  \headedsubsection
+    {Graduate Student}
+    {May \apo10 -- Mar \apo15}
+    {\bodytext{Designed, implemented, and analyzed high-throughput sequencing experiments using the Illumina platform to investigate influenza's cap-snatching repertoire. Utilized 3P-seq to precisely examine alternative cleavage and polyadenylation in diverse genetic backgrounds and model organisms.}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {Mark Gerstein Lab, Yale}
+  {\textsc{New Haven, CT}} {%
+  \headedsubsection
+    {Bioinformatics Staff}
+    {Sept \apo08 -- June \apo09}
+    {\bodytext{Used statistical methods to compare data quality of RNA-seq to tiling microarrays with matched samples.}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {Joan Steitz Lab, Yale}
+  {\textsc{New Haven, CT}} {%
+  \headedsubsection
+    {Undergraduate Student}
+    {May \apo06 -- Apr \apo08}
+    {\bodytext{Investigated the function of Herpesvirus saimiri Small U RNAs (HSURs) by sequencing candidate targets and pulldowns.}}
+}
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Publications and Presentations}  % a root section title
+{\noindent Connor KL, Briggs AW, Goldfless SJ, Timberlake S, Belmont BJ, Clouser CR, \textbf{Koppstein D}, Vigneault F. 2016. 
+Comprehensive TIL profiling by simultaneous DNA barcoding of proteins, RNA and natively paired immune receptors from millions of single cells. \textit{Proc. AACR 107th Ann. Meeting}.} \vspace{0.2em} \\
+{\noindent \textbf{Koppstein D}, Ashour J, Ploegh H, and Bartel DP. Sequencing the cap-snatching repertoire of H1N1influenza provides insight into the mechanism of viral transcription initiation. 2015. \textit{Nucleic Acids Research 43(10), 5052-5064}.} \vspace{0.2em} \\{\noindent Hezroni H, \textbf{Koppstein D}, Schwartz M, Tabin CJ, Bartel DP, and Ulitsky I. 2015. Principles of long noncodingRNA evolution derived from direct comparison of transcriptomes in 14 vertebrates. \textit{Cell reports 11(7), 1110-1122}}. \vspace{0.2em} \\{\noindent \textbf{Koppstein D}, Ashour J, Ploegh H, and Bartel DP. High-throughput sequencing of H1N1 influenza's cap-snatching repertoire clarifies the mechanism of viral transcription initiation. \textit{Poster Presentation, RNA Society, Quebec City, 2014}}. \vspace{0.2em} \\{\noindent Nam J-W, Rissland OS, \textbf{Koppstein D}, Abreu-Goodger C, Jan CH, Agarwal V, Yildirim, Rodriguez A, and Bartel DP. 2014. Global Analyses of the Effect of Different Cellular Contexts on MicroRNA Targeting. \textit{Molecular Cell. 53, 1031-1043.}} \vspace{0.2em} \\{\noindent Ulitsky I, Shkumatava A, Jan C, Subtelny AO, \textbf{Koppstein D}, Bell G, Sive H, and Bartel DP. 2012. Extensive alternative polyadenylation during zebrafish development. \textit{Genome Research. 22(10):2054-66.}} \vspace{0.2em} \\{\noindent Agarwal A\footnote[1]{Authors contributed equally to this publication.}, \textbf{Koppstein D}\footnotemark[1], Rozowsky J, Sboner A, Habegger L, Hillier LW, Sasidharan R, Reinke V, Waterston RH, and Gerstein M. 2010. Comparison and calibration of transcriptome data from RNA-Seq and tiling arrays. \textit{BMC Genomics. 11:383.}} \vspace{0.2em} \\{\noindent Mukhopadhyay J, Das K, Ismail S, \textbf{Koppstein D}, Jang M, Hudson B, Sarafianos S, Tuske S, Patel J, Jansen R, Irschik H, Arnold E, and Ebright RH. 2008. Myxopyronin, Corallopyronin, and Ripostatin Inhibit Transcription by Binding to the RNA Polymerase Switch Region. \textit{Cell. 135:295-307.}} \vspace{0.2em} \\
+
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Skills}  % a root section title
+
+  % special section that has an inline header with a 'hanging' paragraph
+\headedsection{Wet lab}
+{\bodytext{Extensive experience with Illumina library preparation and custom experiment design: Poly(A)-Position Profiling (3P-Seq), SMART-seq, vector integration sequencing (VIS-seq), and standard RNA-seq. Experience with molecular cloning, tissue culture maintenance and transfection, Northern/Western blots, protein purification, PCR, and yeast genetics.}
+}
+
+\vspace{0.1in}
+ 
+\headedsection{Dry lab}
+{\bodytext{Fluent in Python and R, including data visualization with IPython, pandas, and seaborn. Expertise with modern bioinformatics tools including samtools, bedtools, BWA, STAR, RSEM, Cufflinks, etc. Familiarity with immunosequencing-related toolkits including pRESTO and IGBLAST. Experience writing scalable computational pipelines for industry using Snakemake. Experience administering Amazon EC2 clusters using CFNCluster and Ansible. Experience managing a team of computational biologists using agile methods including Scrum and continuous integration (Jenkins).}
+}
+
+\vspace{0.1in}
+
+\spacedhrule{0.4em}{-0.2em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Fellowships and Awards}  % a root section 
+
+\begin{itemize}
+\item Juno CEO Discretionary Award for Outstanding Performance, 2016
+\item NSF Graduate Research Fellowship Program, Honorable Mention, 2011
+\item Yale STARS II Research Fellowship, 2007-8
+\end{itemize}
+
+\spacedhrule{0.4em}{-0.2em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Extracurricular}
+
+\begin{itemize}\item MIT Urban Cycling Skills and Safety Clinic Organizer, 2013-4 
+\item Whitehead Partner for High School Science Teacher Outreach, 2012 
+\item MIT Cycling Team Officer, 2012-2014
+\end{itemize}
+
+\end{document}
