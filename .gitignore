@@ -11,6 +11,9 @@
 *.cb
 *.cb2
 
+# Mac-speciifc
+.DS_Store
+
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
@@ -204,7 +207,7 @@ TSWLatexianTemp*
 # KBibTeX
 *~[0-9]*
 
-# auto folder when using emacs and auctex 
+# auto folder when using emacs and auctex
 /auto/*
 
 # expex forward references with \gathertags
