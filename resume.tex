@@ -20,6 +20,9 @@
 \usepackage[english]{babel}
 \hyphenation{Some-long-word}
 
+% allow utf-8
+\usepackage[utf8]{inputenc}
+
 % Makes resume-specific commands available.
 \usepackage{resume}
 \usepackage{footmisc}
@@ -41,7 +44,7 @@
 % \href well..
 % \\ breaks the line into a new paragraph
 \noindent\href{mailto:david.koppstein@gmail.coml}{david.koppstein\mbox{}@\mbox{}gmail.com}\sbull
-\textsmaller{}+61 4 8830 3039\sbull Skype: david.koppstein
+\textsmaller{}+49 (0) 170 7740947 \sbull Skype: david.koppstein
 \vspace{0.05in}
 
 \spacedhrule{-0.2em}{-0.6em}
@@ -61,7 +64,7 @@
   {\textsc{New Haven, CT}} {%
   \headedsubsection
     {\textnormal{B.S., Molecular Biophysics and Biochemistry}}
-    {2001 -- 2002} {}
+    {2008} {}
 }
 \vspace{0.05in}
 
@@ -70,12 +73,21 @@
 \roottitle{Experience}
 
 \headedsection  % sets the header for the section and includes any subsections
+  {Nikolaus Rajewsky Lab, Max Delbrück Center for Molecular Medicine}
+  {\textsc{Berlin, Germany}} {%
+  \headedsubsection
+    {Postdoctoral Researcher}
+    {June \apo18 -- present}
+    {\bodytext{Investigating the function of alternative polyadenylation during differentiation of neural lineages in single cells.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
   {Viral Immunology Systems Program, Kirby Institute, UNSW}
   {\textsc{Sydney, Australia}} {%
   \headedsubsection
-    {Postdoctoral Fellow}
-    {Apr \apo17 -- present}
-    {\bodytext{Developing computational methods for analyzing single-cell transcriptomics data of immune cells in the context of viral infection, including immune receptor reconstruction using VDJPuzzle. Mentoring two Ph.D students and one honors student. }}
+    {Postdoctoral Researcher}
+    {Apr \apo17 -- April \apo18}
+    {\bodytext{Developed computational methods for analyzing single-cell transcriptomics data of immune cells. Mentored two Ph.D students, a Master's student, and an Honor's student. }}
 }
 
 \headedsection  % sets the header for the section and includes any subsections
@@ -111,15 +123,15 @@
   \headedsubsection
     {Undergraduate Student}
     {May \apo06 -- Apr \apo08}
-    {\bodytext{Investigated the function of Herpesvirus saimiri Small U RNAs (HSURs) by sequencing candidate targets and pulldowns.}}
+    {\bodytext{Investigated the function of Herpesvirus saimiri Small U RNAs (HSURs).}}
 }
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Publications and Preprints}  % a root section title
+{\noindent Rizzetto S, \textbf{Koppstein D}, Samir J, Singh M, Reed JH, Cai CH, Lloyd AR, Eltahla AA, Goodnow CC, Luciani F. B-cell receptor reconstruction from single-cell RNA-seq with VDJPuzzle. 2018. \textit{Bioinformatics. doi:10.1093/bioinformatics/bty203}. \vspace{0.5em} \\
 {\noindent Grigaityte K, Carter JA, Goldfless SJ, Jefferey EW, Hause RJ, Jiang Y, \textbf{Koppstein D}, Briggs AW, Church GM, Vigneault F, Atwal GS. Single-cell sequencing reveals $\alpha \beta$ chain pairing shapes the T cell repertoire. 2017. \textit{bioRxiv}.} \vspace{-0.8em} \\
 {\noindent Dale R, Gruning B, Sjodin A, Rowe J, Chapman BA, Tomkins-Tinch CH, Valieris R, \textbf{Koppstein D}, The Bioconda Team, Koster J. Bioconda: A sustainable and comprehensive software distribution for the life sciences. 2017. \textit{bioRxiv}.} \vspace{0.4em} \\
-{\noindent Rizzetto S, \textbf{Koppstein D}, Samir J, Singh M, Reed JH, Cai CH, Lloyd AR, Eltahla AA, Goodnow CC, Luciani F. B-cell receptor reconstruction from single-cell RNA-seq with VDJPuzzle. 2017. \textit{bioRxiv}. \vspace{0.5em} \\
 {\noindent Briggs AW, Goldfless SJ, Timberlake S, Belmont BJ, Clouser CR, \textbf{Koppstein D}, Sok D, Vander Heiden JA, Tamminen MV, Kleinstein SH, Burton DR, Church GM, Vigneault F. 2017. Tumor-infiltrating immune repertoires captured by single-cell barcoding in emulsion. \textit{bioRxiv}. \vspace{0.5em} \\
 {\noindent \textbf{Koppstein D}, Ashour J, and Bartel DP. Sequencing the cap-snatching repertoire of H1N1
 influenza provides insight into the mechanism of viral transcription initiation. 2015. \textit{Nucleic Acids Research 43(10), 5052-5064}.} \vspace{0.5em} \\
@@ -130,7 +142,7 @@ RNA evolution derived from direct comparison of transcriptomes in 14 vertebrates
 {\noindent Agarwal A\footnote[1]{Authors contributed equally to this publication.}, \textbf{Koppstein D}\footnotemark[1], Rozowsky J, Sboner A, Habegger L, Hillier LW, Sasidharan R, Reinke V, Waterston RH, and Gerstein M. 2010. Comparison and calibration of transcriptome data from RNA-Seq and tiling arrays. \textit{BMC Genomics. 11:383.}} \vspace{0.3em} \\
 {\noindent Mukhopadhyay J, Das K, Ismail S, \textbf{Koppstein D}, Jang M, Hudson B, Sarafianos S, Tuske S, Patel J, Jansen R, Irschik H, Arnold E, and Ebright RH. 2008. Myxopyronin, Corallopyronin, and Ripostatin Inhibit Transcription by Binding to the RNA Polymerase Switch Region. \textit{Cell. 135:295-307.}} \vspace{0.3em} \\
 
-\spacedhrule{0.3em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+\spacedhrule{0.1em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Presentations and Posters}
 
@@ -148,18 +160,18 @@ RNA evolution derived from direct comparison of transcriptomes in 14 vertebrates
 
   % special section that has an inline header with a 'hanging' paragraph
 \headedsection{Wet lab}
-{\bodytext{Extensive experience with Illumina library preparation and custom experiment design: Poly(A)-Position Profiling (3P-Seq), SMART-seq, vector integration sequencing (VIS-seq), and standard RNA-seq. Experience running the 10X Chromium in single-cell mode and subsequent library preparation. Experience with molecular cloning, tissue culture maintenance and transfection, Northern/Western blots, protein purification, PCR, and yeast genetics.}
+{\bodytext{Extensive experience with Illumina library preparation and custom design: 3P-Seq, SMART-seq, and standard RNA-seq. Experience running the 10X Chromium in single-cell mode and subsequent library preparation. Experience with molecular cloning, tissue culture maintenance and transfection, Northern/Western blots, protein purification, PCR, and yeast genetics.}
 }
 
 \vspace{0.1in}
 
 \headedsection{Dry lab}
-{\bodytext{Fluent in Python and R. Expertise with modern bioinformatics tools including samtools, bedtools, STAR, featureCounts, edgeR, limma, Picard, Kallisto, etc. Experience with analysing single cell sequencing data using scater, Seurat, SC3, scran, etc. Experience writing scalable computational pipelines for industrial next-generation sequencing assays using Snakemake. Experience with statistical methods and machine learning techniques. Experience administering Amazon EC2 clusters using CFNCluster and Ansible. Experience managing a team of computational biologists using agile methods including Scrum and continuous integration.}
+{\bodytext{Fluent in Python and R. Expertise with modern bioinformatics tools including samtools, bedtools, STAR, featureCounts, edgeR, Picard, Kallisto, etc. Experience with analysing single-cell sequencing data using scater, Seurat, scran, etc. Experience writing scalable computational pipelines for industrial next-generation sequencing assays using Snakemake. Experience with statistical methods and machine learning techniques. Experience administering Amazon EC2 clusters using CFNCluster and Ansible. Experience managing a team of computational biologists using agile methods.}
 }
 
 \vspace{0.1in}
 
-\spacedhrule{0.4em}{-0.2em}  % a horizontal line with some vertical spacing before and after
+\spacedhrule{0.1em}{-0.2em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Fellowships and Awards}  % a root section
 
@@ -174,12 +186,12 @@ RNA evolution derived from direct comparison of transcriptomes in 14 vertebrates
 \roottitle{Extracurricular}
 
 \begin{itemize}
-\item MIT Urban Cycling Skills and Safety Clinic Organizer, 2013-4
+\item Urban Cycling Skills and Safety Clinic Organizer, 2013-4
 \item Whitehead Partner for High School Science Teacher Outreach, 2012
 \item MIT Cycling Team Officer, 2012-2014
 \end{itemize}
 
-\spacedhrule{0.4em}{-0.2em}  % a horizontal line with some vertical spacing before and after
+\spacedhrule{-0.2em}{-0.5em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{References}  % a root section
 
