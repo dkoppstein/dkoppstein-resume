@@ -1,0 +1,58 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.69in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% allow utf-8
+\usepackage[utf8]{inputenc}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+\usepackage{footmisc}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+{\centering
+\maintitle{List of the selected key publications of David Koppstein}{}{}\par
+}
+\nobreakvspace{0.1em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\vspace{0.05in}
+
+\begin{enumerate}
+{\item Rizzetto S, \textbf{Koppstein D}, Samir J, Singh M, Reed JH, Cai CH, Lloyd AR, Eltahla AA, Goodnow CC, Luciani F. B-cell receptor reconstruction from single-cell RNA-seq with VDJPuzzle. 2018. \textit{Bioinformatics. doi:10.1093/bioinformatics/bty203}. \vspace{0.5em} \\
+{\item \textbf{Koppstein D}, Ashour J, and Bartel DP. Sequencing the cap-snatching repertoire of H1N1
+influenza provides insight into the mechanism of viral transcription initiation. 2015. \textit{Nucleic Acids Research 43(10), 5052-5064}.} \vspace{0.5em} \\
+{\item Nam J-W, Rissland OS, \textbf{Koppstein D}, Abreu-Goodger C, Jan CH, Agarwal V, Yildirim, Rodriguez A, and Bartel DP. 2014. Global Analyses of the Effect of Different Cellular Contexts on MicroRNA Targeting. \textit{Molecular Cell. 53, 1031-1043.}} \vspace{0.5em}} \\
+\end{enumerate}
+
+\spacedhrule{-0.4em}{-0.5em}  % a horizontal line with some vertical spacing before and after
+
+\end{document}
