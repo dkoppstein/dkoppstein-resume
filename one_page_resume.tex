@@ -1,0 +1,162 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.69in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% allow utf-8
+\usepackage[utf8]{inputenc}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+\usepackage{footmisc}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{DAVID N.P. KOPPSTEIN}{}{}
+
+\nobreakvspace{0.1em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:david.koppstein@gmail.coml}{david.koppstein\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{}+491707740947
+\vspace{0.25in}
+
+\spacedhrule{-0.2em}{-0.6em}
+
+\roottitle{Education}
+
+\headedsection
+  {Massachusetts Institute of Technology}
+  {\textsc{Cambridge, MA}} {%
+  \headedsubsection
+    {\textnormal{Ph.D, Biology}}
+    {2015} {}
+}
+
+\headedsection
+  {Yale University}
+  {\textsc{New Haven, CT}} {%
+  \headedsubsection
+    {\textnormal{B.S., Molecular Biophysics and Biochemistry}}
+    {2008} {}
+}
+\vspace{-0.2in}
+
+%\spacedhrule{-0.2em}{-0.8em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {DKTK Partner Site Düsseldorf/Essen}
+  {\textsc{Düsseldorf, Germany}} {%
+  \headedsubsection
+    {Junior Group Leader, Cancer Bioinformatics and Multiomics}
+    {June \apo23 -- present}
+    {\bodytext{Investigating the role of spliceosomal mutations in SHH medulloblastoma using long reads. Studying mutations in transcriptional coactivators that promote BCP-ALL glucocorticoid resistance.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Bioinformatics Core, MPI for Immunobiology and Epigenetics}
+  {\textsc{Freiburg, Germany}} {%
+  \headedsubsection
+    {Staff Bioinformatician}
+    {August \apo22 -- April \apo23}
+    {\bodytext{Performed analysis of transcript isoforms and chromosomal conformation using long reads.}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Nikolaus Rajewsky Lab, Max Delbrück Center for Molecular Medicine}
+  {\textsc{Berlin, Germany}} {%
+  \headedsubsection
+    {Postdoctoral Researcher}
+    {June \apo18 -- June \apo22}
+    {\bodytext{Used 10X Visium to analyze aberrant RNA isoforms in neuromuscular organoids models of ALS. Discovered role of vault RNAs in SARS-CoV-2 infection. }}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Viral Immunology Systems Program, Kirby Institute, UNSW}
+  {\textsc{Sydney, Australia}} {%
+  \headedsubsection
+    {Postdoctoral Researcher}
+    {Apr \apo17 -- April \apo18}
+    {\bodytext{Codeveloped VDJPuzzle, a computational method for analyzing single-cell transcriptomics data of immune cells. Used this method to analyze single-cell transcriptomes of rogue B cells in Sjögren's disease. }}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Juno Therapeutics (formerly AbVitro)}
+  {\textsc{Seattle, WA, USA}} {%
+  \headedsubsection
+    {Data Scientist}
+    {Mar \apo15 -- Mar \apo17}
+    {\bodytext{Principal architect of the immunosequencing bioinformatics pipeline. Codiscovered effective TCR binders for HPV E6 and E7. Served as interim manager of the data science team. }}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {David Bartel Lab, MIT}
+  {\textsc{Boston, MA, USA}} {%
+  \headedsubsection
+    {Graduate Student}
+    {May \apo10 -- Mar \apo15}
+    {\bodytext{Profiled influenza's cap-snatching repertoire using NGS, discovering that snRNAs are primary targets of this process. Used Poly(A) profiling to annotate APA events. }}
+}
+
+\vspace{-0.2in}
+
+%\spacedhrule{0.1em}{-0.2em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Fellowships and Awards}  % a root section
+
+\begin{itemize}
+\item Juno CEO Award for Outstanding Performance, 2016
+\item NSF Graduate Research Fellowship Program, Honorable Mention, 2011
+\end{itemize}
+
+%\spacedhrule{0.1em}{-0.2em}  % a horizontal line with some vertical spacing before and after
+\vspace{-0.2in}
+
+\roottitle{Selected Publications}  % a root section title
+
+{\noindent Alfonso-Gonzalez C, Legnini I, Holec S, Arrigioni L, Ozbulut HC, Mateos F, \textbf{Koppstein D}, Rybak-Wolf A, Bönisch U, Rajewsky N, Hilgers V. Sites of transcription initiation drive mRNA isoform selection. 2023. \textit{Cell. doi: 10.1016/j.cell.2023.04.012}. \vspace{0.5em} \\ 
+%{\noindent Bujanic L, Shevchuk O, von Kügelgen N, Kalinina A, Ludwik K, \textbf{Koppstein D}, Zerna N, Sickmann A, Chekulaeva M. The key features of SARS-CoV-2 leader and NSP1 required for viral escape of NSP1-mediated repression. 2022. \textit{RNA. doi: 10.1261/rna.079086.121}. \vspace{0.5em} \\ 
+{\noindent Wyler M, Mösbauer K, Franke F, Diag A, Gottula LT, Arsie R, Klironomos F, \textbf{Koppstein D}, ..., Rajewsky N, Drosten C, Landthaler M. Transcriptomic profiling of SARS-CoV-2 infected human cell lines identifies HSP90 as target for COVID-19 therapy. 2021. \textit{iScience. doi: 10.1016/j.isci.2021.102151}. \vspace{0.5em} \\
+{\noindent Singh M, Jackson KJL, Wang JJ, Schofield P, Field MA, \textbf{Koppstein D}, ..., Luciani F, Gordon TP, Goodnow CC, Reed JH. Lymphoma driver mutations in the pathogenic evolution of an iconic human autoantibody. 2020. \textit{Cell. doi:10.1016/j.cell.2020.01.029}. \vspace{0.5em} \\
+{\noindent Rizzetto S, \textbf{Koppstein D}, Samir J, Singh M, Reed JH, Cai CH, Lloyd AR, Eltahla AA, Goodnow CC, Luciani F. B-cell receptor reconstruction from single-cell RNA-seq with VDJPuzzle. 2018. \textit{Bioinformatics. doi:10.1093/bioinformatics/bty203}. \vspace{0.5em} \\
+%{\noindent Grüning B, Dale R, Sjödin A, Chapman BA, Rowe J, Tomkins-Tinch CH, Valieris R, Koster J, \textbf{The Bioconda Team}. Bioconda: sustainable and comprehensive software distribution for the life sciences. 2018. \textit{Nature Methods 15, 475-76}.} \vspace{0.4em} \\
+%{\noindent Grigaityte K, Carter JA, Goldfless SJ, Jefferey EW, Hause RJ, Jiang Y, \textbf{Koppstein D}, Briggs AW, Church GM, Vigneault F, Atwal GS. Single-cell sequencing reveals $\alpha \beta$ chain pairing shapes the T cell repertoire. 2017. \textit{bioRxiv}.} \vspace{-0.8em} \\
+%{\noindent Briggs AW, Goldfless SJ, Timberlake S, Belmont BJ, Clouser CR, \textbf{Koppstein D}, Sok D, Vander Heiden JA, Tamminen MV, Kleinstein SH, Burton DR, Church GM, Vigneault F. 2017. Tumor-infiltrating immune repertoires captured by single-cell barcoding in emulsion. \textit{bioRxiv}. \vspace{0.5em} \\
+{\noindent \textbf{Koppstein D}, Ashour J, and Bartel DP. Sequencing the cap-snatching repertoire of H1N1
+influenza provides insight into the mechanism of viral transcription initiation. 2015. \textit{Nucleic Acids Research 43(10), 5052-5064}.} \vspace{0.5em} \\
+{\noindent Hezroni H, \textbf{Koppstein D}, Schwartz M, Tabin CJ, Bartel DP, and Ulitsky I. 2015. Principles of long noncoding
+RNA evolution derived from direct comparison of transcriptomes in 14 vertebrates. \textit{Cell Reports 11(7), 1110-1122}}. \vspace{0.5em} \\
+%{\noindent Nam J-W, Rissland OS, \textbf{Koppstein D}, Abreu-Goodger C, Jan CH, Agarwal V, Yildirim, Rodriguez A, and Bartel DP. 2014. Global Analyses of the Effect of Different Cellular Contexts on MicroRNA Targeting. \textit{Molecular Cell. 53, 1031-1043.}} \vspace{0.5em} \\
+%{\noindent Ulitsky I, Shkumatava A, Jan C, Subtelny AO, \textbf{Koppstein D}, Bell G, Sive H, and Bartel DP. 2012. Extensive alternative polyadenylation during zebrafish development. \textit{Genome Research. 22(10):2054-66.}} \vspace{0.5em} \\
+%{\noindent Agarwal A\footnote[1]{Authors contributed equally to this publication.}, \textbf{Koppstein D}\footnotemark[1], Rozowsky J, Sboner A, Habegger L, Hillier LW, Sasidharan R, Reinke V, Waterston RH, and Gerstein M. 2010. Comparison and calibration of transcriptome data from RNA-Seq and tiling arrays. \textit{BMC Genomics. 11:383.}} \vspace{0.3em} \\
+%{\noindent Mukhopadhyay J, Das K, Ismail S, \textbf{Koppstein D}, Jang M, Hudson B, Sarafianos S, Tuske S, Patel J, Jansen R, Irschik H, Arnold E, and Ebright RH. 2008. Myxopyronin, Corallopyronin, and Ripostatin Inhibit Transcription by Binding to the RNA Polymerase Switch Region. \textit{Cell. 135:295-307.}} \vspace{0.3em} \\
+
+\end{document}
